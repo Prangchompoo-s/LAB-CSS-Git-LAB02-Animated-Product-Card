@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Animated Product Card | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <div class="Product-card">
+        <div class="logo-cart">
+            <img src= "New_Balance_logo.jpg" alt="New_Balance_logo">
+            <i class='bx bxs-shopping-bag'></i>
+        </div>
+        <div class="main-images">
+            <img id="grey"class="Beige " src="Beige.png" alt="#fff"></i>
+            <img id="brown" class="timber wolf active " src="Timberwolf.png" alt="#fff"></i>
+            <img id="blue" class="Rain cloud" src="Rain Cloud.png" alt="#fff"></i>
+        </div>
+
+        <div class="shoe-details">
+            <span class="shoe_name">NEW BALANCE</span>
+            <p>  Built with an ABZORB midsole and with a textile, mesh and leather upper, you won't get trainers more stylish and comfortable than these. </p>
+           <div class="stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bx-star' ></i>
+           </div>
+       </div>
+       <div class="color-price">
+        <div class="color-option">
+            <span class="color">Color:</span>
+                <div class="div circle">
+                    <span class="circle grey active" id="grey"></span>
+                    <span class="circle brown active" id="brown"></span>
+                    <span class="circle blue active" id="blue"></span>
+                </div>
+        </div>
+        <div class="price">
+            <span class="price_num">฿3,315.00</span>
+            
+           
+        </div>
+       </div>
+       <div class="botton">
+        <div class="button-layer"></div>
+        <button>Add  to Cart</button>
+       </div>
+    </div>
+
+    <script>
+
+        let circle = document.querySelector(".color-option");
+        
+        circle.addEventListener("click", (e)=>{
+        
+        let target = e.target;
+        
+        if(target.classList.contains("circle")){
+        
+        circle.querySelector(".active").classList.remove("active");
+        
+        target.classList.add("active");
+        
+        document.querySelector(".main-images.active").classList.remove("active");
+        
+        document.querySelector(".main-images .฿{target.id}").classList.add("active");
+        
+        }
+        
+        });
+        
+        
+         
+    
+    
+    </script>
+
+   
+    
+</body>
+</html>

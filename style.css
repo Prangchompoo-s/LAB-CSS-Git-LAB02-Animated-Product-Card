@@ -1,0 +1,175 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg,#49cbff 10%,#9708cc 100% ,pink 20%);
+ }
+
+ .Product-card {
+    position: relative;
+    max-width: 355px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px 30px 30px 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+   overflow: hidden;
+ }
+
+ .Product-card .logo-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .Product-card .logo-cart img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    }
+
+.Product-card .logo-cart i {
+    font-size: 27px;
+    color:  black;
+    cursor:pointer;
+    transition: color 0.3s ease;
+}
+.Product-card .logo-cart i:hover {
+    color: #333;
+   
+}
+.Product-card .main-images{
+   position:relative;
+   height: 210px;
+}
+
+.Product-card .main-images img{
+    position:absolute;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    transform: rotate(18deg);
+    left: 12px;
+    top: -40px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.Product-card .main-images img.active{
+    opacity: 1;
+}
+
+.Product-card .shoe-details .shoe_name{
+    font-size: 24px;
+    font-weight: 500px;
+    color: #161616;
+}
+.Product-card .shoe-details p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+}
+
+.Product-card .shoe-details .stars i{
+    margin: 0 -1px;
+    color: #333;
+}
+
+.Product-card .color-prince .color-option{
+    display: flex;
+    align-items: center;
+}
+.color-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.color-prince .color-option .color{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 8px;
+}
+.color-option .circle{
+    display: flex;
+}
+
+.color-option .circle .circle{
+    height: 30px;
+    width: 30px;
+    background: whitesmoke;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.color-option .circle .circle.grey.active{
+    box-shadow: 0 0 0 2px #fff
+                0 0 0 4px grey;
+}
+
+.color-option .circle .circle.brown{
+    background-color: brown;
+}
+.color-option .circle .circle.brown.active{
+    box-shadow: 0 0 0 2px #fff
+                0 0 0 4px brown;
+}
+
+.color-option .circle .circle.blue{
+    background-color: blue;
+}
+.color-option .circle .circle.blue.active{
+    box-shadow: 0 0 0 2px #fff
+                0 0 0 4px blue;
+}
+.color-price .price{
+    display: flex;
+    flex-direction: column;
+}
+
+.color-price .price .price_num{
+    font-size: 25px;
+    font-weight: 600;
+    color:#707070;
+}
+
+.Product-card .button{
+    position:relative;
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.Product-card .button .button-layer{
+    position:absolute;
+    height: 100%;
+    width: 300%;
+    background-image: linear-gradient(135deg,#49cbff 10%,#9708cc 100% ,pink 20%);
+
+}
+.Product-card .button button{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
